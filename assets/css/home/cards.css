@@ -1,0 +1,88 @@
+h5{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-family: 'Cinzel', serif;
+}
+
+.projects{
+    background: linear-gradient(45deg, black, transparent);
+    background-color: #1d1d1d;
+    border-right: 2em inset rgb(0, 0, 0);
+    border-bottom: 2em inset rgb(0, 0, 0);
+    border-left: 2em inset rgb(0, 0, 0);
+    border-image: initial;
+    border-top: none;
+}
+.projects__card {
+    display: inline-grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 250px 20px;
+    grid-template-areas: "image" "text";
+  
+    border-radius: 18px;
+    background: #1d1d1d;
+    color:white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: justify;
+    transition: 0.5s ease;
+    margin:30px;
+}
+.projects__card:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
+
+.projects__card__text {
+    font-size:14px;
+    grid-area: text;
+    margin: 25px;
+    cursor: pointer;
+}
+.projects__card__text p {
+    color: grey;
+    font-size:0.8rem;
+    letter-spacing: 0.1em;
+    font-family: 'Cinzel', serif;
+    cursor: pointer;
+    
+}
+.projects__card__image {
+    grid-area: image;
+    background-image: url("../../img/relogio.png");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+    height: 80%;
+}
+
+.projects__card__image2 {
+    grid-area: image;
+    background-image: url("../../img/background.png");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: 100% 100%;
+    height: 80%;
+}
+.projects__card__image3 {
+    grid-area: image;
+    background-image:url("../../img/Tarefas.png");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: 100% 100%;
+    height: 80%;
+}
+.projects__card__image4 {
+    height: 80%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: 100% 100%;
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .projects__card{
+        background-size: 100% 100% cover;
+        grid-template-columns:none;
+    }
+}

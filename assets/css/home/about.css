@@ -1,0 +1,63 @@
+.about{
+    background: linear-gradient(45deg, black, transparent);
+    background-color: #1f1e1e;
+    
+    border: 2em inset #000000;
+    border-top: none;
+}
+h3 {
+    font-size: 3.5em;
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 700;
+    text-align: center;
+    color:#FFFFFF;
+    padding-top: 1.9rem;  
+    letter-spacing: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about__me__description {
+    color: #FFFFFF;
+    font-size: 1rem;
+    letter-spacing: 0.3em;
+    padding: 2rem;
+}
+.about__me{
+    padding: 5rem 0;
+    display: flex;
+    gap: 67px;
+    max-width: 1364px;
+    margin: 0 auto;
+}
+.about__focus{
+    position: relative;
+    display: flex;
+    color: #FFFFFF;
+    flex-wrap:wrap;
+    align-items: center;
+    list-style: circle;
+    list-style-position: inside;
+    justify-content: center;
+    padding-top: 4%; 
+}
+.about__focus__list{
+    font-size: 1rem;
+    padding: 3rem;  
+    font-size: 1.2rem;  
+    letter-spacing: 0.3em;
+}
+@media screen and (max-width: 1024px) {
+    .about{
+        border: none;
+    }
+    .focus{
+        display: block;
+    }
+    h3{
+        font-size: 2.5em;
+    }
+    .about__focus{
+        justify-content:initial;
+    }
+}
